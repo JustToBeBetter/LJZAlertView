@@ -15,6 +15,8 @@
 		E8C22FCB1DFE3763000E5BF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C22FC91DFE3763000E5BF5 /* LaunchScreen.storyboard */; };
 		E8C22FD61DFE3763000E5BF5 /* LJZAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C22FD51DFE3763000E5BF5 /* LJZAlertViewTests.m */; };
 		E8C22FE11DFE3763000E5BF5 /* LJZAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C22FE01DFE3763000E5BF5 /* LJZAlertViewUITests.m */; };
+		E8C22FF01DFE49F8000E5BF5 /* LJZAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C22FEF1DFE49F8000E5BF5 /* LJZAlertView.m */; };
+		E8C22FF31DFE4ACC000E5BF5 /* LJZAlertAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C22FF21DFE4ACC000E5BF5 /* LJZAlertAppearance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		E8C22FDC1DFE3763000E5BF5 /* LJZAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJZAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C22FE01DFE3763000E5BF5 /* LJZAlertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZAlertViewUITests.m; sourceTree = "<group>"; };
 		E8C22FE21DFE3763000E5BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C22FEE1DFE49F8000E5BF5 /* LJZAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJZAlertView.h; sourceTree = "<group>"; };
+		E8C22FEF1DFE49F8000E5BF5 /* LJZAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZAlertView.m; sourceTree = "<group>"; };
+		E8C22FF11DFE4ACC000E5BF5 /* LJZAlertAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJZAlertAppearance.h; sourceTree = "<group>"; };
+		E8C22FF21DFE4ACC000E5BF5 /* LJZAlertAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZAlertAppearance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				E8C22FC91DFE3763000E5BF5 /* LaunchScreen.storyboard */,
 				E8C22FCC1DFE3763000E5BF5 /* Info.plist */,
 				E8C22FBB1DFE3763000E5BF5 /* Supporting Files */,
+				E8C22FEE1DFE49F8000E5BF5 /* LJZAlertView.h */,
+				E8C22FEF1DFE49F8000E5BF5 /* LJZAlertView.m */,
+				E8C22FF11DFE4ACC000E5BF5 /* LJZAlertAppearance.h */,
+				E8C22FF21DFE4ACC000E5BF5 /* LJZAlertAppearance.m */,
 			);
 			path = LJZAlertView;
 			sourceTree = "<group>";
@@ -207,6 +217,7 @@
 				TargetAttributes = {
 					E8C22FB71DFE3763000E5BF5 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QW9Z5KHRK8;
 						ProvisioningStyle = Automatic;
 					};
 					E8C22FD01DFE3763000E5BF5 = {
@@ -273,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C22FF31DFE4ACC000E5BF5 /* LJZAlertAppearance.m in Sources */,
+				E8C22FF01DFE49F8000E5BF5 /* LJZAlertView.m in Sources */,
 				E8C22FC31DFE3763000E5BF5 /* ViewController.m in Sources */,
 				E8C22FC01DFE3763000E5BF5 /* AppDelegate.m in Sources */,
 				E8C22FBD1DFE3763000E5BF5 /* main.m in Sources */,
@@ -422,7 +435,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QW9Z5KHRK8;
 				INFOPLIST_FILE = LJZAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.designbox.LJZAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +448,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QW9Z5KHRK8;
 				INFOPLIST_FILE = LJZAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.designbox.LJZAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
